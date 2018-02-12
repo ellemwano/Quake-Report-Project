@@ -62,7 +62,7 @@ import java.util.ArrayList;
                 JSONArray earthquakeArray = baseJsonResponse.getJSONArray("features");
 
                 /// For each earthquake in the earthquakeArray, create an {@link Earthquake} object
-                for (int i=0; i>earthquakeArray.length(); i++) {
+                for (int i=0; i < earthquakeArray.length(); i++) {
 
                     // Get a single earthquake at position i within the list of earthquakes
                     JSONObject currentEarthquake = earthquakeArray.getJSONObject(i);
@@ -88,7 +88,6 @@ import java.util.ArrayList;
                     // Add the new {@link Earthquake} to the list of earthquakes.
                     earthquakes.add(earthquake);
                 }
-
 
             } catch (JSONException e) {
                 // If an error is thrown when executing any of the above statements in the "try" block,
