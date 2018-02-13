@@ -63,6 +63,8 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
         // Display the location of the current earthquake in that TextView
         locationTextView.setText(currentEarthquake.getLocation());
 
+
+
         // Find the TextView with view ID date
         TextView dateTextView = (TextView) listItemView.findViewById(R.id.date);
         // Display the date of the current earthquake in that TextView

@@ -13,20 +13,20 @@ public class Earthquake {
     private String mLocation;
 
     /** Time of the earthquake **/
-    private String mDate;
+    private long mTimeInMilliseconds;
 
 
     /**
      * Construct a new {@link Earthquake} object
      * @param magnitude the magnitude of the earthquake
      * @param location the location where the earthquake happened
-     * @param date the time in milliseconds (form the Epoch)
+     * @param timeInMilliseconds the time in milliseconds (form the Epoch)
      *                           when the earthquake happened
      */
-    public Earthquake(String magnitude, String location, String date) {
+    public Earthquake(String magnitude, String location, long timeInMilliseconds) {
         mMagnitude = magnitude;
         mLocation = location;
-        mDate = date;
+        mTimeInMilliseconds = timeInMilliseconds;
     }
 
     /**
@@ -46,8 +46,8 @@ public class Earthquake {
     /**
      * Return the time of the earthquake
      */
-    public String getDate() {
-        return mDate;
+    public long getTimeInMilliseconds() {
+        return mTimeInMilliseconds;
     }
 
 }
